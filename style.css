@@ -89,3 +89,41 @@ footer {
     padding: 20px;
     font-size: 0.9em;
 }
+
+/* Screenshots Section */
+#screenshots {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#screenshots h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#screenshots p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.screenshot {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshot:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
